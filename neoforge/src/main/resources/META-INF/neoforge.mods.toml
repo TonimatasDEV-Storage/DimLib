@@ -1,0 +1,41 @@
+modLoader="javafml"
+loaderVersion="[0,)"
+license="MIT"
+issueTrackerURL="https://github.com/TonimatasDEV/DimLib/issues"
+
+[[mixins]]
+config="dimlib.mixins.json"
+
+[[mods]]
+modId="dimlib"
+version="${modVersion}"
+displayName="DimLib"
+displayURL="https://github.com/TonimatasDEV/DimLib"
+#logoFile="icon.png"
+authors="qouteall - Creator | TonimatasDEV- Port"
+
+description='''
+Adds the functionality of dynamically adding and removing dimensions.
+Also allow disabling 'Experimental Settings not supported' warning screen.
+'''
+
+[[dependencies.dimlib]]
+   modId="neoforge"
+   type="required"
+   versionRange="${neoforgeLoaderRange}"
+   ordering="NONE"
+   side="BOTH"
+
+[[dependencies.dimlib]]
+   modId="minecraft"
+   type="required"
+   versionRange="${neoforgeMinecraftVersionRange}"
+   ordering="NONE"
+   side="BOTH"
+
+[[dependencies.dimlib]]
+modId="midnightlib"
+type="required"
+versionRange="[0,)"
+ordering="BEFORE"
+side="BOTH"

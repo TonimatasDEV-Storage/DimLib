@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "dimlib",
+  "version": "${modVersion}",
+  "name": "DimLib",
+  "description": "Adds the functionality of dynamically adding and removing dimensions.\nAlso allow disabling 'Experimental Settings not supported' warning screen.",
+  "authors": [
+    "qouteall",
+    "TonimatasDEV"
+  ],
+  "contact": {
+    "homepage": "https://github.com/TonimatasDEV/DimLib",
+    "sources": "https://github.com/TonimatasDEV/DimLib",
+    "issues": "https://github.com/TonimatasDEV/DimLib/issues"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "qouteall.dimlib.fabric.DimLibEntry"
+    ],
+    "client": [
+      "qouteall.dimlib.fabric.DimLibEntryClient"
+    ],
+    "modmenu": [
+      "qouteall.dimlib.fabric.DimLibModmenuIntegration"
+    ]
+  },
+  "mixins": [
+    "dimlib.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "${fabricMinecraftVersionRange}",
+    "fabric-api": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "badges": ["library"]
+    }
+  }
+}
