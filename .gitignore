@@ -1,40 +1,17 @@
-# gradle
-
-.gradle/
-build/
-out/
-classes/
-
-# eclipse
-
-*.launch
-
-# idea
-
-.idea/
-*.iml
-*.ipr
-*.iws
-
-# vscode
-
-.settings/
-.vscode/
-bin/
-.classpath
-.project
-
-# macos
-
-*.DS_Store
-
-# fabric
-
-run/
-
-# java
-
-hs_err_*.log
-replay_*.log
-*.hprof
-*.jfr
+# Project exclude paths
+/.gradle/
+/.idea/
+/build/
+/common/.gradle/
+/common/build/
+/common/run/
+/fabric/.gradle/
+/fabric/build/
+/fabric/run/
+/forge/.gradle/
+/forge/build/
+/forge/run/
+/neoforge/.gradle/
+/neoforge/build/
+/neoforge/run/
+/run/

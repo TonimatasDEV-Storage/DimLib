@@ -1,6 +1,6 @@
 # DimLib
 
-This is a Fabric mod that can:
+This mod can:
 * Add and remove dimensions when the server is running or when the server is initializing.
 * Synchronize dimension info to client when dimension changes if the client has the mod.
 * Allow suppressing the "Worlds using Experimental Settings are not supported" warning, through config or code.
